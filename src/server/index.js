@@ -11,7 +11,7 @@ const axios = require('axios')
 
 // ========
 app.use(cors());
-app.use(bodyParser().json());
+app.use(bodyParser.json());
 app.use(express.static('dist'))
 
 // ========
@@ -43,7 +43,7 @@ app.post('/analyse', async(req, res) =>{
 
 // ========
 // designates what port the app will listen to for incoming requests
-app.listen(PORT, (error) => {
+app.listen(port, (error) => {
     if (error) throw new Error(error)
     console.log(`Server listening on port ${port}!`)
 })
