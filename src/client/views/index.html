@@ -10,17 +10,15 @@
   <header>
     <h1>Sentiment Analyzer</h1>
   </header>
-  
+
   <main>
     <div class="container">
       <p>Enter a URL of an article / a blog to discover its sentiment.</p>
       <section>
-        <form id="form">
-          <label for="article-url">URL</label>
-          <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here" />
-          <button type="submit" class="btn-submit">
-            Submit
-          </button>
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+          <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here">
+          <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+            onsubmit="return handleSubmit(event)">
         </form>
       </section>
 
