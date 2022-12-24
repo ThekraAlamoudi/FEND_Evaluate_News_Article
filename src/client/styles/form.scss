@@ -1,0 +1,54 @@
+$primary-color: #fff;
+$cursor: pointer;
+
+.container {
+    background-color: $primary-color;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    line-height: 1.5;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(to bottom right, #7D6E83, #DFD3C3);
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+
+    input {
+        width: 100%;
+        border: none;
+        padding: 14px;
+        border-radius: 3px;
+    }
+
+    input {
+        border: 2px solid #DADDEC;
+        margin: 5px 0 10px;
+        font-size: 1rem;
+        color: #656880;
+    }
+
+
+    #submit input:hover {
+        border: 2px solid #656880;
+        color: #DADDEC;
+        opacity: 0.4;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        margin: 20px 0 0;
+        color: #BABDCB;
+        font-size: 12px;
+    }
+}

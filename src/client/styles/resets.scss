@@ -1,0 +1,27 @@
+$primary-color: #fff;
+$cursor: pointer;
+
+img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    
+        padding: 10px 40px 10px 10px;
+
+        h2 {
+            font-size: 1.2rem;
+            color: #1A2250;
+        }
+
+        p {
+            font-size: 18px;
+            color: #3B4169;
+            margin: 10px 0;
+        }
+    
+}
+

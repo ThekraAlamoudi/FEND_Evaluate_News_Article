@@ -17,7 +17,7 @@
       <section>
         <form class="" onsubmit="return Client.handleSubmit(event)">
           <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here">
-          <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+          <input type="submit" id="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)"
             onsubmit="return handleSubmit(event)">
         </form>
       </section>
@@ -34,9 +34,12 @@
     </div>
   </main>
 
-  <footer>
-    <p>Thank you!</p>
-  </footer>
+  <footer class="footer">
+    <div class="footer">
+        <h4>Thekra Alamoudi &copy; 2022 </h4>
+    </div>
+</footer>
+
 
   <script>
     // Check that service workers are supported
